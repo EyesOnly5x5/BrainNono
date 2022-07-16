@@ -3,11 +3,11 @@
     <string name="title1">Brain-Nono</string>
     <string name="title8">NonoGram</string>
     <string name="title8o">NG</string>
-    <string name="title8a">5x5</string>
-    <string name="title8b">6x6</string>
+    <string name="title8a">&#160;&#160;&#160;5x5&#160;&#160;&#160;</string>
+    <string name="title8b">&#160;&#160;&#160;6x6&#160;&#160;&#160;</string>
     <string name="title8c">&#160;&#160;&#160;7x7&#160;&#160;&#160;</string>
-    <string name="title8d">8x8</string>
-    <string name="title8e">9x9</string>
+    <string name="title8d">&#160;&#160;&#160;8x8&#160;&#160;&#160;</string>
+    <string name="title8e">&#160;&#160;&#160;9x9&#160;&#160;&#160;</string>
     <string name="title8f">&#160;10x10&#160;</string>
     <string name="title9">Das ist es</string>
     <string name="titleNone"></string>
@@ -50,7 +50,16 @@
     <string name="AnleitNonoG">
         Nonogram\n\nEs gilt das muster herauszufinden.\n
         Die zahlen am rand geben an, wieviele punkte ohne leerraum gesetzt sind.\n\n
-        bsp.: 1-1-1 = RgRgR / 2-2 = RRgRR\n1-1 = RgRgg oder gRgRg oder ggRgR
+        bsp.: 1-1-1 = RgRgR / 2-2 = RRgRR\n1-1 = RgRgg oder gRgRg oder ggRgR\n
+        -----\n
+        Meine Amazon Wunschliste: https://ogy.de/hiaq\n
+        Wer möchte und kann, darf mir gerne etwas von meiner Wunschliste zukommen lassen, oder auch nicht.
+    </string>
+    <string name="Losung">
+        GelbGrün = Leer und Richtig\n
+        Grün = gestzt aber falsch\n
+        Rot = falsch\n
+        Gelb = richtig
     </string>
 
 </resources>

@@ -97,7 +97,7 @@ public class NonoGramActivity extends AppCompatActivity {
         int column = daten.getAnzahl()+1;
         int row = daten.getAnzahl()+1;
         int total = row*column;
-        buttonSize = daten.getMetrics().getButtonSize( (daten.getAnzahl()+4)*(daten.getAnzahl()+4) );
+        buttonSize = daten.getMetrics().getButtonSize( (daten.getAnzahl()+5)*(daten.getAnzahl()+5) );
         gridLayout.setColumnCount( column );
         gridLayout.setRowCount( row );
 
@@ -134,12 +134,13 @@ public class NonoGramActivity extends AppCompatActivity {
                 //param.height = (int) (90);
                 param.height = buttonSize;
                 param.width = (int) (getResources().getDimension(R.dimen.NonoNG)*daten.getMetrics().getFaktor())-40;
-                param.topMargin = 16;
+                param.topMargin = 10;
             } else {
                 oView = new Button(this);
                 oView.setId( BUTTON_IDS[(c+(daten.getAnzahl()*(r-1)-1))] );
                 oView.setTag( BUTTON_IDS[(c+(daten.getAnzahl()*(r-1)-1))] );
                 oView.setTextColor(oView.getContext().getResources().getColor(R.color.white));
+                oView.setTextSize( getResources().getDimension(R.dimen.NonoTxt) );
                 oView.setBackgroundColor(oView.getContext().getResources().getColor(R.color.DarkGreen));
                 Button finalOView = oView;
                 oView.setOnClickListener(view -> {
@@ -151,11 +152,12 @@ public class NonoGramActivity extends AppCompatActivity {
                 //param.width = (int) (50*daten.getMetrics().getFaktor());
                 param.height = buttonSize;
                 param.width = buttonSize;
+                param.topMargin = 10;
             }
             oView.setGravity( Gravity.CENTER );
             oView.setPadding( 0, 0, 0, 0);
 
-            param.rightMargin = 6;
+            param.rightMargin = 5;
             param.setGravity(Gravity.CENTER);
             param.columnSpec = GridLayout.spec(c);
             param.rowSpec = GridLayout.spec(r);
