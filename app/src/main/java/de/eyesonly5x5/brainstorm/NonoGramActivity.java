@@ -139,7 +139,8 @@ public class NonoGramActivity extends AppCompatActivity {
                 oView = new Button(this);
                 oView.setId( BUTTON_IDS[(c+(daten.getAnzahl()*(r-1)-1))] );
                 oView.setTag( BUTTON_IDS[(c+(daten.getAnzahl()*(r-1)-1))] );
-                oView.setTextColor(oView.getContext().getResources().getColor(R.color.white));
+                oView.setTextColor(oView.getContext().getResources().getColor(R.color.black));
+                oView.setText( "" );
                 oView.setTextSize( getResources().getDimension(R.dimen.NonoTxt) );
                 oView.setBackgroundColor(oView.getContext().getResources().getColor(R.color.DarkGreen));
                 Button finalOView = oView;

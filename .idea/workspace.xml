@@ -22,10 +22,8 @@
     <list default="true" id="abfb1ea1-b31d-4b67-ba76-4df93fcb9f09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainstorm/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainstorm/Globals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainstorm/NonoGramActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainstorm/NonoGramActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_nonogram.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_nonogram.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,13 +210,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629726477167</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Sudo-Kuh erstellen STuffe 4, mit DialogFeld 0-9">
-      <created>1633620319485</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1633620319485</updated>
     </task>
     <task id="LOCAL-00050" summary="Sudo-Kuh Fast Fertig.">
       <created>1633700906105</created>
@@ -556,12 +547,18 @@
       <option name="project" value="LOCAL" />
       <updated>1657707976596</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="BrainNono Anpassung anordnung">
+      <created>1657977298679</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1657977298679</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Start Memory 4." />
     <MESSAGE value="Start Memory 5." />
     <MESSAGE value="Start Memory 6." />
     <MESSAGE value="Start Memory Fertig." />
@@ -586,14 +583,15 @@
     <MESSAGE value="BrainSource Init" />
     <MESSAGE value="BrainSource Überarbeitet" />
     <MESSAGE value="BrainNono Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="BrainNono Init" />
+    <MESSAGE value="BrainNono Anpassung anordnung" />
+    <option name="LAST_COMMIT_MESSAGE" value="BrainNono Anpassung anordnung" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainstorm/Globals.java</url>
-          <line>159</line>
+          <line>163</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -38,6 +38,7 @@ public class Globals  extends ListActivity {
     private int Anzahl = 0;
     private int Activity=-1;
     private Context myContext;
+    private Resources myRes;
     private boolean gewonnen = true;
     private SoundBib SoundW;
     private SoundBib SoundF;
@@ -86,7 +87,10 @@ public class Globals  extends ListActivity {
     public void setActivity(int act){
         Activity = act;
     }
-    public void setMyContext( MainActivity c) { myContext = c; }
+    public void setMyContext( MainActivity c) {
+        myContext = c;
+        myRes = myContext.getResources();
+    }
 
     public void addButton(Button button) {
         buttons.add(button);
@@ -114,8 +118,8 @@ public class Globals  extends ListActivity {
         for (id = 0; id < maxFelder; id++) {
             Button button = buttons.get(id);
             Flg[id] = true;
-            button.setBackgroundColor(button.getContext().getResources().getColor(R.color.DarkGreen));
-            button.setTextColor(button.getContext().getResources().getColor(R.color.white));
+            button.setBackgroundColor(myRes.getColor(R.color.DarkGreen));
+            button.setTextColor(myRes.getColor(R.color.white));
         }
         for (int i = 0; i < 25; i++) {
             id = r.nextInt(maxFelder);
@@ -161,7 +165,8 @@ public class Globals  extends ListActivity {
         }
         for( int i = 0; i<NonoG[0].length; i++ ){
             Button button = buttons.get(i);
-            button.setBackgroundColor(button.getContext().getResources().getColor((NonoG[1][i] == 1)?R.color.DarkRed:R.color.DarkGreen));
+            button.setBackgroundColor(myRes.getColor((NonoG[1][i] == 1)?R.color.DarkRed:R.color.DarkGreen));
+            button.setText( "" );
         }
         gewonnen = false;
     }
@@ -181,10 +186,13 @@ public class Globals  extends ListActivity {
         for( int i = 0; i<NonoG[0].length; i++ ){
             Button button = buttons.get(i);
             if( NonoG[0][i] == NonoG[1][i] ){
-                button.setBackgroundColor( button.getContext().getResources().getColor( (NonoG[0][i]==0)? R.color.Richtig0: R.color.Richtig1 ) );
+                button.setBackgroundColor( myRes.getColor( (NonoG[0][i]==0)? R.color.Richtig0: R.color.Richtig1 ) );
+                button.setTextColor(myRes.getColor(R.color.black));
             } else {
+                button.setTextColor(myRes.getColor(R.color.white));
                 gewonnen = false;
             }
+            button.setText( (NonoG[0][i]==0)? "-": "*" );
         }
     }
 
@@ -270,7 +278,7 @@ public class Globals  extends ListActivity {
 
         if( wer < 3 ){
             for (int i = 0; i < ret.length; i++) {
-                ret[i] = myContext.getResources().getIdentifier("b"+(i+1), "id", myContext.getPackageName());
+                ret[i] = myRes.getIdentifier("b"+(i+1), "id", myContext.getPackageName());
             }
         } else {
             for (int i = 0; i < ret.length; i++) {
@@ -320,11 +328,11 @@ public class Globals  extends ListActivity {
     public void changeFlg(int id) {
         Button button = buttons.get(id);
         if (Flg[id]) {
-            button.setBackgroundColor(button.getContext().getResources().getColor(R.color.DarkRed));
-            button.setTextColor(button.getContext().getResources().getColor(R.color.Gelb));
+            button.setBackgroundColor(myRes.getColor(R.color.DarkRed));
+            button.setTextColor(myRes.getColor(R.color.Gelb));
         } else {
-            button.setBackgroundColor(button.getContext().getResources().getColor(R.color.DarkGreen));
-            button.setTextColor(button.getContext().getResources().getColor(R.color.white));
+            button.setBackgroundColor(myRes.getColor(R.color.DarkGreen));
+            button.setTextColor(myRes.getColor(R.color.white));
         }
         Flg[id] = !Flg[id];
     }
@@ -333,7 +341,7 @@ public class Globals  extends ListActivity {
     public void toogleColor( int id ){
         Button button = buttons.get(id);
         NonoG[1][id] = (NonoG[1][id] == 0)?1:0;
-        button.setBackgroundColor(button.getContext().getResources().getColor((NonoG[1][id] == 1)?R.color.DarkRed:R.color.DarkGreen));
+        button.setBackgroundColor(myRes.getColor((NonoG[1][id] == 1)?R.color.DarkRed:R.color.DarkGreen));
     }
 
     static class SoundBib extends AppCompatActivity {
@@ -386,17 +394,13 @@ public class Globals  extends ListActivity {
             soundPool = null;
         }
     }
-    private String StrZ( int wert, int len ){
-        StringBuilder ret = new StringBuilder("" + wert);
-        while( ret.length() < len ) ret.insert(0, "0");
-        return(ret.toString());
-    }
 
     public void Anleitung( Context dasDA, int Wat ) {
         Dialog customDialog = new Dialog( dasDA );
         customDialog.setContentView(R.layout.anleitung);
         TextView oView = customDialog.findViewById( R.id.Anleitung );
-        oView.setText( Wat );
+        String str = myRes.getString( Wat, myRes.getString( R.string.Wunschliste ), myRes.getString( R.string.Losung ) );
+        oView.setText( str );
         Button bView = customDialog.findViewById( R.id.Warte );
         bView.setOnClickListener(view -> customDialog.dismiss());
         customDialog.setCancelable(false);
