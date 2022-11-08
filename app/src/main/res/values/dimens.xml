@@ -6,7 +6,7 @@
     <dimen name="ButX2">25dp</dimen>
     <dimen name="ButY2">34dp</dimen>
     <dimen name="NonoTop">50dp</dimen>
-    <dimen name="NonoTxt">6sp</dimen>
+    <dimen name="NonoTxt">8sp</dimen>
     <dimen name="NonoPad">2dp</dimen>
     <dimen name="NonoNG">90dp</dimen>
     <dimen name="NonoLogo">12sp</dimen>
