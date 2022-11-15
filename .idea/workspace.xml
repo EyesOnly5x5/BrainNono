@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abfb1ea1-b31d-4b67-ba76-4df93fcb9f09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/MyDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/MyDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/NonoGramActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/NonoGramActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,13 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629726477167</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Solitaer start.">
-      <created>1634050082276</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1634050082276</updated>
     </task>
     <task id="LOCAL-00059" summary="Solitaer start, Stuffe 1.">
       <created>1634140757034</created>
@@ -574,12 +564,18 @@
       <option name="project" value="LOCAL" />
       <updated>1667920554627</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="TextGrösse angepasst 2">
+      <created>1668511897134</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1668511897135</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Anleitungen Fertig." />
     <MESSAGE value="Größen anpassungen." />
     <MESSAGE value="Größen anpassungen 3." />
     <MESSAGE value="Größen anpassungen 4." />
@@ -604,7 +600,8 @@
     <MESSAGE value="readme.md hinzugefügt." />
     <MESSAGE value="License hinzugefügt." />
     <MESSAGE value="TextGrösse angepasst" />
-    <option name="LAST_COMMIT_MESSAGE" value="TextGrösse angepasst" />
+    <MESSAGE value="TextGrösse angepasst 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="TextGrösse angepasst 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
