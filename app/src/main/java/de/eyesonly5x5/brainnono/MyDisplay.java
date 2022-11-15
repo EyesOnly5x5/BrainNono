@@ -38,6 +38,17 @@ public class MyDisplay {
         return( (int) ((getMinPixels()-rand-(margin*lang)) / lang) );
     }
 
+    public double getScreenSize() {
+        double ySize = metrics.heightPixels / metrics.ydpi;
+        double xSize = metrics.widthPixels / metrics.xdpi;
+
+        // Bildschirmgrösse in Zoll
+        return( Math.sqrt(xSize * xSize + ySize * ySize) );
+    }
+    public int getTextSize(){
+        return((int) getScreenSize()*4);
+    }
+
     public void setWoMischen( String wert ){ woMischen = wert; }
     public String getWoMischen( ){ return( woMischen ); }
 

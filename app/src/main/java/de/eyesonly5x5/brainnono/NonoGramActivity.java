@@ -38,8 +38,6 @@ public class NonoGramActivity extends AppCompatActivity {
                 // TextView oView = findViewById( R.id.Kopf );
                 daten.NonoGMischer();
                 DasIstEs.setText( R.string.title9 );
-                // Random Ran = new Random();
-                // oView.setRotation( Ran.nextInt( 360 ) );
             } else {
                 daten.DasIstEs();
                 daten.getSoundBib( daten.getGewonnen() ).playSound();
@@ -74,10 +72,6 @@ public class NonoGramActivity extends AppCompatActivity {
                 daten.NonoGMischer();
                 Button button = findViewById( R.id.DasIstEs );
                 button.setText( R.string.title9 );
-
-                // daten.NonoGView();
-                //Random Ran = new Random();
-                //oView.setRotation( Ran.nextInt( 360 ) );
                 return( true );
             case R.id.AnLeit:
                 daten.Anleitung( this, R.string.AnleitNonoG );
@@ -86,30 +80,11 @@ public class NonoGramActivity extends AppCompatActivity {
 
         return( super.onOptionsItemSelected( item) );
     }
-/*
-    private void SetzeSpielfaeche(){
 
-        for(int i = 0, c = 0, r = 0; i < total; i++, c++){
-            if( c == column ){ c = 0; r++; }
-
-            GridLayout.LayoutParams param = new GridLayout.LayoutParams();
-            oView = new Button(this);
-            if( c == 0 && r == 0 ) {
-                oView.setId( 600 );
-                oView.setTag( 600 );
-                oView.setTextColor(oView.getContext().getResources().getColor(R.color.black));
-                oView.setText( ""+(600) );
-                oView.setTextSize( 12 );
-                oView.setBackgroundColor( oView.getContext().getResources().getColor(R.color.xxx) );
-                Button finalOView = oView;
-                oView.setOnClickListener(view -> {
-                    SetzeTextOben();
-                });
-
- */
     private void SetzeSpielfaeche(){
         Button oView;
         int buttonSize;
+        int textFeldSize;
         int textSize;
         int margin = 2;
         int column = daten.getAnzahl()+1;
@@ -118,8 +93,9 @@ public class NonoGramActivity extends AppCompatActivity {
         GridLayout gridLayout = findViewById( R.id.butty );
         gridLayout.removeAllViews();
 
-        textSize = daten.getMetrics().getMinPixels()/4;
-        buttonSize = daten.getMetrics().getButtonSize( column, margin*2, textSize );
+        textFeldSize = daten.getMetrics().getMinPixels()/4;
+        textSize = daten.getMetrics().getTextSize();
+        buttonSize = daten.getMetrics().getButtonSize( column, margin*2, textFeldSize );
         gridLayout.setColumnCount( column );
         gridLayout.setRowCount( row );
 
@@ -134,32 +110,32 @@ public class NonoGramActivity extends AppCompatActivity {
                 oView.setId( R.id.Kopf );
                 //param.height = 0;
                 //param.width = 0;
-                param.height = textSize;
-                param.width = textSize;
+                param.height = textFeldSize;
+                param.width = textFeldSize;
             } else if( r==0 ){
                 oView = new Button(this);
                 oView.setTextColor( Color.parseColor("#FF000000" ) );
                 oView.setBackgroundColor( Color.parseColor("#FFFFFFFF" ) );
-                oView.setTextSize( getResources().getDimension(R.dimen.NonoTxt) );
+                oView.setTextSize( textSize );
                 oView.setId( TEXT_IDS[c-1] );
-                param.height = textSize;
+                param.height = textFeldSize;
                 param.width = buttonSize;
             } else if( c==0 ){
                 oView = new Button(this);
                 oView.setTextColor( Color.parseColor("#FF000000" ) );
                 oView.setBackgroundColor( Color.parseColor("#FFFFFFFF" ) );
-                oView.setTextSize( getResources().getDimension(R.dimen.NonoTxt) );
+                oView.setTextSize( textSize );
                 oView.setId( TEXT_IDS[(daten.getAnzahl()+r-1)] );
                 //param.topMargin = 10;
                 param.height = buttonSize;
-                param.width = textSize;
+                param.width = textFeldSize;
             } else {
                 oView = new Button(this);
                 oView.setId( BUTTON_IDS[(c+(daten.getAnzahl()*(r-1)-1))] );
                 oView.setTag( BUTTON_IDS[(c+(daten.getAnzahl()*(r-1)-1))] );
                 oView.setTextColor(oView.getContext().getResources().getColor(R.color.black));
                 oView.setText( "" );
-                oView.setTextSize( getResources().getDimension(R.dimen.NonoTxt) );
+                oView.setTextSize( textSize );
                 oView.setBackgroundColor(oView.getContext().getResources().getColor(R.color.DarkGreen));
                 Button finalOView = oView;
                 oView.setOnClickListener(view -> {
