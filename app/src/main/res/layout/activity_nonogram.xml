@@ -6,7 +6,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:gravity="center_horizontal"
-    tools:context=".NonoGramActivity">
+    tools:context="io.github.eyesonly5x5.NonoGramActivity">
 
     <TextView
         android:id="@+id/First"
@@ -39,7 +39,7 @@
             android:paddingRight="8dp"
             android:rowCount="16"
             android:stretchMode="columnWidth"
-            tools:context=".NonoGramActivity"
+            tools:context="io.github.eyesonly5x5.NonoGramActivity"
             tools:ignore="UselessParent">
 
             <TextView

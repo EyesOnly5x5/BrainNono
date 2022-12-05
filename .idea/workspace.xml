@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abfb1ea1-b31d-4b67-ba76-4df93fcb9f09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/io/github/eyesonly5x5/Globals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/io/github/eyesonly5x5/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/MischButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/io/github/eyesonly5x5/MischButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/MyDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/io/github/eyesonly5x5/MyDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/NonoGramActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/io/github/eyesonly5x5/NonoGramActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_nonogram.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_nonogram.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +40,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/elmacro/.android/avd/Nexus_10_API_28.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/elmacro/.android/avd/Nexus_5X_API_26_x86.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -227,13 +236,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629726477167</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Solitaer start, Stuffe 1.">
-      <created>1634140757034</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1634140757035</updated>
     </task>
     <task id="LOCAL-00060" summary="Solitaer start, Stuffe 2.">
       <created>1634227117238</created>
@@ -571,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668511897135</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="TextGrösse angepasst 2">
+      <created>1668512219049</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1668512219049</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -607,7 +616,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/de/eyesonly5x5/brainnono/Globals.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/io/github/eyesonly5x5/Globals.java</url>
           <line>163</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

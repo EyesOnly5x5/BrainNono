@@ -1,4 +1,4 @@
-package de.eyesonly5x5.brainnono;
+package io.github.eyesonly5x5;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -12,6 +12,8 @@ import android.widget.GridLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import de.eyesonly5x5.brainnono.R;
 
 public class NonoGramActivity extends AppCompatActivity {
     Globals daten = Globals.getInstance();
